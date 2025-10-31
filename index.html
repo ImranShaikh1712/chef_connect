@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef Connect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ChefConnect</div>
+    <ul class="nav-menu">
+      <li><a href="#search">Search Recipes</a></li>
+      <li><a href="#add">Add Recipes</a></li>
+      <li><a href="#connect">Chef Connect</a></li>
+      <li><a href="#ratings">Ratings & Comments</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="animate-title">Welcome to Chef Connect</h1>
+      <p class="animate-subtitle">Find recipes, share your creations, and connect with chefs worldwide!</p>
+      <div class="buttons">
+        <a href="#search" class="btn">Search Recipes</a>
+        <a href="#add" class="btn">Add Your Recipe</a>
+        <a href="#connect" class="btn">Connect with a Chef</a>
+        <a href="#ratings" class="btn">View Ratings & Comments</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Recipes -->
+  <section id="search" class="content-section">
+    <h2>Search Delicious Recipes</h2>
+    <p>Discover thousands of mouth-watering recipes from all around the world. Filter by cuisine, cooking time, and ingredients to find your perfect dish.</p>
+    <input type="text" placeholder="Search for a recipe..." class="search-bar">
+  </section>
+
+  <!-- Add Recipes -->
+  <section id="add" class="content-section">
+    <h2>Share Your Creations</h2>
+    <p>Upload your own recipes with step-by-step instructions, images, and videos to inspire other food lovers.</p>
+    <button class="btn">Upload Recipe</button>
+  </section>
+
+  <!-- Chef Connect -->
+  <section id="connect" class="content-section">
+    <h2>Connect with Chefs</h2>
+    <p>Chat with professional chefs and learn their secret cooking techniques. Join live cooking sessions and Q&A events.</p>
+    <button class="btn">Find a Chef</button>
+  </section>
+
+  <!-- Ratings & Comments -->
+  <section id="ratings" class="content-section">
+    <h2>Ratings & Comments</h2>
+    <p>See what others think about your recipes and share your feedback with the community.</p>
+    <div class="review-card">
+      <h4>John Doe</h4>
+      <p>⭐⭐⭐⭐⭐ "Amazing recipe! My family loved it."</p>
+    </div>
+    <div class="review-card">
+      <h4>Maria Smith</h4>
+      <p>⭐⭐⭐⭐ "Great taste, but I added extra spices for more flavor."</p>
+    </div>
+  </section>
+  
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Login to ChefConnect</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn form-btn">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© 2025 ChefConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
